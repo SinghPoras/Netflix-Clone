@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(35, 35, 35);
+    font-family: Arial, Helvetica, sans-serif, Netflix Sans;
+}
+.logo img{
+    height: 40px;
+}
+
+.background .box{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    opacity: 0.60;
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Images/bg\ image\ top.jpeg);
+    background-position: center center;
+    background-size: max(1300px , 100vw);
+    background-repeat: no-repeat;
+}
+
+nav{
+    position: relative;
+    top: 25px;
+    max-width: 77vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#selectlang{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#signin{
+    margin-left: 10px;
+    font-size: 14px;
+    height: 32px;
+    font-weight: 500;
+    padding: 4px 16px;
+    border-radius: 5px;
+    border-color: red;
+    background-color: red;
+    color: white;
+}
+
+.subscription{
+    width: 80vw;
+    margin: auto;
+    margin-top: 33vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts{
+    color: white;
+    z-index: 10;
+}
+
+.email{
+    color: white;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 56px;
+}
+
+#mail{
+    font-size: 16px;
+    width: 364px;
+    height: 56px;
+    background-color: black;
+    opacity: 0.6;
+    border-radius: 5px;
+    border-color: black;
+    margin: 5px;
+    color: white;
+    text-align: top;
+}
+
+#getstarted{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border-color:  rgb(229, 9, 20);
+    background-color:  rgb(229, 9, 20);
+    color: white;
+}
+
+.Unlimited{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.anywhere{
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.ready{
+    font-size: 20px;
+    margin: 15px;
+}
+
+main{
+    color: white;
+}
+
+.Enjoy{
+    margin-top: 8px;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.text{
+    max-width: 40vw;
+}
+
+#tvimage{
+    grid-area: myArea;
+    width: 541px;
+}
+
+#tvvedio{
+   height: 221px;
+   grid-area: myArea;
+   margin-left: 72px;
+   margin-top: 85px;
+}
+
+.player{
+    min-height: 70vh;
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: "myArea";
+}
+
+.enjoytext{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.watch{
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.separation{
+    height: 8px;
+    width: 100vw;
+    background-color: rgb(35, 35, 35);
+}
