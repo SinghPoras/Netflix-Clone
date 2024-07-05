@@ -1,17 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: rgb(35, 35, 35);
     font-family: Arial, Helvetica, sans-serif, Netflix Sans;
 }
-.logo img{
+
+.logo img {
     height: 40px;
 }
 
-.background .box{
+.background .box {
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -20,16 +21,16 @@ body{
     opacity: 0.60;
 }
 
-.background{
+.background {
     height: 100vh;
     width: 100vw;
     background-image: url(Images/bg\ image\ top.jpeg);
     background-position: center center;
-    background-size: max(1300px , 100vw);
+    background-size: max(1300px, 100vw);
     background-repeat: no-repeat;
 }
 
-nav{
+nav {
     position: relative;
     top: 25px;
     max-width: 77vw;
@@ -39,19 +40,21 @@ nav{
     align-items: center;
 }
 
-#selectlang{
+#selectlang {
+    grid-area: languageselector;
     font-size: 16px;
     font-weight: 400;
-    padding: 5px 30px;
-    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 20px;
     border-radius: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
     color: white;
 }
 
-#signin{
-    margin-left: 10px;
+#signin {
     font-size: 14px;
     height: 32px;
     font-weight: 500;
@@ -62,7 +65,7 @@ nav{
     color: white;
 }
 
-.subscription{
+.subscription {
     width: 80vw;
     margin: auto;
     margin-top: 33vh;
@@ -72,12 +75,12 @@ nav{
     align-items: center;
 }
 
-.texts{
+.texts {
     color: white;
     z-index: 10;
 }
 
-.email{
+.email {
     color: white;
     z-index: 10;
     display: flex;
@@ -86,7 +89,7 @@ nav{
     max-height: 56px;
 }
 
-#mail{
+#mail {
     font-size: 16px;
     width: 364px;
     height: 56px;
@@ -99,7 +102,7 @@ nav{
     text-align: top;
 }
 
-#getstarted{
+#getstarted {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,34 +111,162 @@ nav{
     font-weight: bold;
     padding: 12px 24px;
     border-radius: 5px;
-    border-color:  rgb(229, 9, 20);
-    background-color:  rgb(229, 9, 20);
+    border-color: rgb(229, 9, 20);
+    background-color: rgb(229, 9, 20);
     color: white;
 }
 
-.Unlimited{
+.Unlimited {
     font-size: 48px;
     font-weight: 900;
 }
 
-.anywhere{
+.anywhere {
     font-size: 24px;
     margin-top: 16px;
     margin-bottom: 16px;
     font-weight: 400;
 }
 
-.ready{
+.ready {
     font-size: 20px;
     margin: 15px;
 }
 
-main{
+main {
     color: white;
 }
 
-.Enjoy{
+.Enjoy {
     margin-top: 8px;
+    width: 100vw;
+    min-height: 560px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.text {
+    max-width: 40vw;
+}
+
+#tvimage {
+    grid-area: myArea;
+    width: 541px;
+}
+
+#tvvedio {
+    height: 221px;
+    grid-area: myArea;
+    margin-left: 72px;
+    margin-top: 85px;
+}
+
+.player {
+    min-height: 70vh;
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: "myArea";
+}
+
+.enjoytext {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.watch {
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.separation {
+    height: 8px;
+    width: 100vw;
+    background-color: rgb(35, 35, 35);
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: "languageselector SignInbutton";
+    gap: 20px;
+}
+
+#langsymbol {
+    grid-area: languageselector;
+    z-index: 10;
+    width: 16px;
+    height: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+}
+
+#mobileimage {
+    width: 558px;
+    height: 418px;
+}
+
+#stthingsposter {
+    width: 57px;
+    height: 84px;
+    grid-area: poster;
+
+}
+
+#downloadgif {
+    width: 48px;
+    grid-area: gif;
+    padding-left: 10px;
+}
+
+.downloadanim {
+    width: 280px;
+    display: grid;
+    grid-template-areas: " poster stranger gif" "poster download gif";
+    background-color: black;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.stranger {
+    font-size: 16px;
+    font-weight: 500;
+    align-self: flex-end;
+    padding: 0px 15px;
+}
+
+.downloading {
+    font-size: 14px;
+    color: rgb(0, 113, 235);
+    align-self: flex-start;
+    padding: 0px 15px;
+}
+
+.phoneamin {
+    display: grid;
+    grid-template-areas: "phone";
+}
+
+#downanim {
+    height: 90px;
+    grid-area: phone;
+    margin-top: 285px;
+    margin-left: 130px;
+}
+
+#mobileimage {
+    grid-area: phone;
+}
+
+.things {
+    min-height: 560px;
     width: 100vw;
     margin: auto;
     display: flex;
@@ -144,42 +275,44 @@ main{
     background-color: black;
 }
 
-.text{
-    max-width: 40vw;
+#chawal {
+    width: 558px;
+    grid-area: vedio;
+    z-index: 10;
 }
 
-#tvimage{
-    grid-area: myArea;
-    width: 541px;
-}
-
-#tvvedio{
-   height: 221px;
-   grid-area: myArea;
-   margin-left: 72px;
-   margin-top: 85px;
-}
-
-.player{
-    min-height: 70vh;
+#saifalikhan {
+    width: 352px;
+    grid-area: vedio;
     margin-top: 50px;
+    margin-left: 103px;
+}
+
+.rajma {
     display: grid;
-    grid-template-areas: "myArea";
+    grid-template-areas: "vedio";
 }
 
-.enjoytext{
-    font-size: 48px;
-    font-weight: 900;
-}
-
-.watch{
-    margin-top: 16px;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.separation{
-    height: 8px;
+.sacredgames {
+    min-height: 560px;
     width: 100vw;
-    background-color: rgb(35, 35, 35);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#childphoto {
+    width: 559px;
+}
+
+.children {
+    min-height: 560px;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
