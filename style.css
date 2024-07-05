@@ -5,7 +5,7 @@
 
 body {
     background-color: rgb(35, 35, 35);
-    font-family: Arial, Helvetica, sans-serif, Netflix Sans;
+    font-family: Arial, Helvetica, sans-serif, 'Netflix Sans';
 }
 
 .logo img {
@@ -316,3 +316,110 @@ main {
     align-items: center;
     background-color: black;
 }
+
+.faq{
+    background-color: black;
+}
+
+.frequently{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.quescontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 77vw;
+    margin: auto;
+}
+
+.ques{
+    display: flex;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 24px;
+    background-color: rgb(40, 40, 40);
+    height: 36px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.readynew{
+    align-self: center;
+    margin-top: 35px;
+}
+
+.emailnew{
+    margin-bottom: 70px;
+}
+
+.ques:hover{
+    background-color: rgb(60, 60, 60);
+}
+
+
+footer{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.content{
+    padding-top: 70px;
+    width: 77vw;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "call call call call"
+                         "faq help account media"
+                         "investor jobs ways terms"
+                         "privacy cookie corporate contact"
+                         "speed legal only only"
+                         "language language language language"
+                         "Netflix Netflix Netflix Netflix";
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 200px;
+    row-gap: 20px;
+    padding-bottom: 70px;
+}
+                        
+#langsymbolnew{
+    grid-area: language;
+    z-index: 2;
+    position: relative;
+    left: 10px;
+}
+
+#selectlangnew{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 20px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    width: max-content;
+    grid-area: language;
+}
+
+.last{
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.call{
+    grid-area: call;
+    font-size: 16px;
+}
+.companyname{
+    grid-area: Netflix;
+    font-size: 14px;
+}
+
